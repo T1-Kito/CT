@@ -1,18 +1,32 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# Laravel & PHP
+/vendor/
+.env
+.env.backup
+.phpunit.result.cache
+Homestead.yaml
+Homestead.json
+/storage/*.key
 
-# Other files and folders
-.settings/
+# Laravel storage and cache
+/storage/framework/*
+!/storage/framework/.gitignore
+/storage/logs/*
+!/storage/logs/.gitignore
+/public/storage
+/bootstrap/cache/*
+!/bootstrap/cache/.gitignore
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# Node & frontend
+/node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# IDE & OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Other system files
+*.log
